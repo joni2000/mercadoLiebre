@@ -1,0 +1,24 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 62.5%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-roboto);
+    background-color: var(--light-grey);
+}
+
+li {
+    list-style: none;
+}

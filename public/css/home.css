@@ -1,0 +1,115 @@
+
+
+/* banner */
+.home .banner {
+    display: none;
+}
+
+/* Main */
+main.home {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* section */
+.home .section-title {
+    margin-bottom: 25px 0;
+    font-size: 2.4rem;
+}
+
+/* container principal */
+.home .sales {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+/* cards */
+.home .card {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 27.4rem;
+} 
+
+.home .card .card-content {
+    border-top: 1px solid var(--light-grey);
+    padding: 15px;
+    position: relative;
+}
+
+/* images */
+.home .card img {
+    width: 100%;
+}
+
+/* camion */
+.home .card .card-content .icon-truck {
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 1.8rem;
+}
+
+.home .card .card-content .icon-truck i{
+    color: var(--green);
+    font-size: 16px;
+}
+
+.home .card .card-content .product-info i{
+    color: var(--green);
+    font-size: 16px;
+}
+
+.home .card .card-content .product-info {
+    display: flex;
+    gap: 1rem;
+   /*  justify-content: space-between; */
+}
+
+.home .card .card-content .product-info :nth-child(1){
+    flex-grow: 1;
+    font-size: 1.8rem;
+}   
+
+.home .card .card-content .product-info :nth-child(2){
+    color: var(--green);
+    font-size: 1.6rem;
+    flex-grow: 9;
+}
+
+.product-info h5{
+    font-size: 1.6rem;
+}
+
+.home .card .card-content .product-name {
+    display: none;
+    color: var(--dark-grey);
+    font-size: 15px;
+    margin-top: 1.5rem;
+}
+
+
+/* media queries */
+/*  desktop */
+@media (min-width: 361px) {
+    .home .sales {
+        justify-content: space-evenly;
+    }
+    
+    .home .card {
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+    }
+    .home .card .card-content .product-name {
+        display: block;
+    }
+
+}
+
+@media (min-width: 769px) {
+
+}
