@@ -10,36 +10,63 @@ header {
 }
 
 header .burger-menu {
-    background-color: var(--light_blue);
-    color: white;
     width: 15px;
-    padding: 7px;
-    border-radius: 5px;
     text-align: center;
     margin: 10px auto 0px;
-    font-size: 15px;
+}
+
+header .burger-menu i{
+    background-color: var(--light_blue);
+    padding: 1.8rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.container-ls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1rem;
 }
 
 header .logo {
-    width: 130px;
-    margin-left: 25px;
+    padding: 1rem;
     padding-top: 25px;
-    margin-bottom: 10px;
+    width: 45%;
 }
 
-.search {
-    border: 1px solid var(--dark-grey);
+header .logo img{
+    min-height: 2rem;
+    max-height: 8rem;
+}
+
+
+.search-bar {
     background-color: white;
     padding: 5px 25px;
-    width: 60%;
-    border-radius: ;
+    width: 45%;
+    border-radius: 0.6rem;
+    height: 3.5rem;
+}
+
+.search-bar input{
+    text-decoration: none;
+    border-style: none;
+    width: 100%;
+}
+
+.search-bar input:focus {
+    outline: none;
 }
 
 /* search bar */
 
 header .search-bar {
     display: inline-block;
-    margin-left: 15px;
 }
 
 /* quota */
