@@ -28,6 +28,7 @@ header .burger-menu i{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
     align-items: center;
     padding: 0 2rem;
     gap: 1rem;
@@ -47,13 +48,15 @@ header .logo img{
 
 .search-bar {
     background-color: white;
-    padding: 5px 25px;
     width: 45%;
-    border-radius: 0.6rem;
     height: 3.5rem;
+    position: relative;
+    border-radius: 0.6rem;
 }
 
 .search-bar input{
+    border-radius: 0.6rem;
+    padding: 1rem;
     text-decoration: none;
     border-style: none;
     width: 100%;
@@ -61,6 +64,20 @@ header .logo img{
 
 .search-bar input:focus {
     outline: none;
+}
+
+.btn-search {
+    position: absolute;
+    right: 0;
+    top: 0.8rem;
+    border-style: none;
+}
+
+.btn-search i {
+    background-color: white;
+    color: var(--dark-grey);
+    cursor: pointer;
+    font-size: 2rem;
 }
 
 /* search bar */
@@ -85,11 +102,13 @@ header nav ul#top-list {
 
 /* media queries */
 /*  tablet */
-@media (min-width: 361px) {
+@media (min-width: 480px) {
     header .burger-menu {
         display: none;
     }
+
     
+
     nav {
         display: block;
     }
@@ -102,6 +121,30 @@ header nav ul#top-list {
         display: block;
     }
     
+    .nav-inf {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-left {
+        width: 50%;
+        gap: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .list-left li{
+        width: 25%;
+    }
+
+    .list-right {
+        width: 50%;
+        gap: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
 }
 
 /*  desktop */
@@ -109,5 +152,41 @@ header nav ul#top-list {
    /* header */
     header .burger-menu {
         display: none;
+    }
+    
+    .container-ls {
+        justify-content: space-between;
+    }
+
+    header .logo {
+        padding: 1rem;
+        padding-top: 25px;
+        width: 30%;
+    }
+    
+    header .logo img{
+        min-height: 2rem;
+        max-height: 8rem;
+    }
+
+    header .search-bar {
+        width: 25%;
+    }
+
+    header p {
+        width: 40%;
+    }
+
+    .nav-inf {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .list-left {
+        width: 25%;
+    }
+    .list-right {
+        width: 25%;
     }
 }
