@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crea tu cuenta</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container-ls">
+          <div class="logo">
+              <img 
+              src="images/logo-mercado-liebre.svg" 
+              alt="Logo mercado liebreee">
+          </div>
+          <div class="search-bar">
+              <input type="text" placeholder="Buscar productos, marcas">
+              <button class="btn-search">
+                  <i class="fas fa-search"></i>
+              </button>
+          </div>
+          <p class="quota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjetas de crédito</p>
+        </div>
+        <nav class="nav-inf">
+            <ul id="top-list" class="list-left">
+                <li><a href="">Ofertas</a></li>
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="list-right">
+                <li><a href="./register">Creá tu cuenta <i class="fas fa-credit-card"></i></a></li>
+                <li><a href="">ingresá <i class="fas fa-sign-in-alt "></i></a></li>
+                <li><a href=""></a>Mis compras <i class="fas fa-shopping-basket "></i></li>
+            </ul> 
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="form-container">
+        <form action="" class="form">
+            <h2 class="form-title">Crea tu cuenta</h2>
+            <div class="input-container">
+                <input class="text input" type="text" class="text" placeholder="Nombre y apellido">             
+            </div>
+            <div class="input-container">
+                <input type="text" class="text input" placeholder="Nombre de usuario">             
+            </div>
+            <div class="input-container">
+                <input type="email" class="text input" placeholder="Correo electrónico">
+            </div>
+            <div class="input-container">
+                <div class="input date">
+                    <label for="date" class="text-title">Fecha de Nacimiento:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" class="text input" placeholder="Domicilio">
+            </div>
+            <div class="input-container">
+                <div class="input radio-cont">
+                    <p class="text-title">Perfil de usuario: </p>
+                    <div class="radio">
+                        <label for="comprador" class="check">Comprador<input type="radio" name="tipo" id="comprador" value="comprador" checked></label>
+                            
+                        <label for="vendedor" class="check">Vendedor <input type="radio" name="tipo" id="vendedor" value="vendedor"></label>
+                    </div>
+                </div>
+            </div>
+                <div class="input-container">
+                    <div class="input cont-intereses">
+                        <p class="text-title">Intereses</p>
+                        <div class="intereses">
+                            <label class="check" for="electro"><input type="checkbox" name="electro" id="electro" value="Electro">Electro</label>
+                            <label class="check" for="Moda"><input type="checkbox" name="Moda" id="Moda" value="Moda">Moda</label>
+                            <label class="check" for="Hogar"><input type="checkbox" name="Hogar" id="Hogar" value="Hogar">Hogar</label>
+                            <label class="check" for="Jugueteria"><input type="checkbox" name="Jugueteria" id="Jugueteria" value="Jugueteria">Juguetería</label>
+                            <label class="check" for="Vida-sana"><input type="checkbox" name="Vida-sana" id="Vida-sana" value="Vida-sana">Vida sana</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <input type="text" class="text input" placeholder="Contraseña">
+                </div>
+                <div class="input-container">
+                    <input type="text" class="text input" placeholder="Confirmar contraseña">
+                </div>
+                <div class="button-container">
+                    <button type="reset">
+                        Borrar datos
+                    </button>
+                    <button type="submit">
+                        <a href="/">Envíar</a>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/index.html'))
 })
 
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, './views/register.html'))
+})
+
 //server
 app.listen(PORT, ()=> console.log(
     `Servido levantado en el puerto ${PORT} 
