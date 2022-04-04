@@ -129,6 +129,10 @@
     color: white;
 }
 
+.login-form {
+    gap: 5rem;
+}
+
 @media (min-width: 480px) {
     .form {
         box-shadow: -1px -1px 5px 1px rgba(75, 75, 75, 0.49);
