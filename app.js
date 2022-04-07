@@ -1,7 +1,7 @@
 let express = require('express');
 let app = express();
 let path = require('path')
-const PORT = 3000;
+const PORT = 3005;
 
 //middlewares
 app.use(express.static('public')) //usando el metodo use y express static para usar archivos estaticos

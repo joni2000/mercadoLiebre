@@ -15,6 +15,11 @@ footer article.footer-article i {
     color: var(--light_blue);
     font-size: 32px;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+footer article.footer-article i:hover {
+    color: var(--yellow);
 }
 
 footer article.footer-article h5 {
