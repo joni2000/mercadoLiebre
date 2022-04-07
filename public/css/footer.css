@@ -32,3 +32,16 @@ footer p.copy {
     color: var(--dark-grey);
     margin: 0 0 10px 15px;
 }
+
+@media (min-width: 769px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-footer {
+        display: flex;
+    }
+}

@@ -105,12 +105,16 @@ main.home {
     .home .card {
         box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
     }
+
     .home .card .card-content .product-name {
-        display: block;
+        display: none;
     }
 
+    .home .card:hover .card-content .product-name {
+        display: block;
+    }
 }
 
 @media (min-width: 769px) {
-
+    
 }
